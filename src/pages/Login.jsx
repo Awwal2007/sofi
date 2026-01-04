@@ -159,7 +159,7 @@ const Login = () => {
               </div>
 
               {/* Features Grid */}
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
                   <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
                     <FiCreditCard className="w-6 h-6 text-blue-600" />
