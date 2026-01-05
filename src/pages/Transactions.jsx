@@ -344,7 +344,7 @@ const Transactions = () => {
                 <p className="text-gray-600 mt-2">Track and manage all your account activity</p>
               </div>
               
-              <div className="flex items-center gap-3">
+              <div className="flex md:flex-row flex-col items-center gap-3">
                 <button
                   onClick={() => setViewMode(viewMode === 'list' ? 'cards' : 'list')}
                   className="px-4 py-2 bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 rounded-xl font-medium flex items-center gap-2 transition-colors"

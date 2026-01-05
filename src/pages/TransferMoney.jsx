@@ -649,9 +649,9 @@ const TransferMoney = () => {
       )}
 
       {/* Main Content */}
-      <div className="p-6">
+      <div className="md:p-6 p-3">
         <div className="max-w-md mx-auto">
-          <div className="bg-white rounded-3xl p-6 shadow-sm mb-6">
+          <div className="bg-white rounded-3xl md:p-6 p-3 shadow-sm mb-6">
             {renderStepContent()}
             
             {error && step < 3 && (
