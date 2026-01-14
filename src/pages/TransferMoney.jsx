@@ -68,8 +68,8 @@ const TransferMoney = () => {
       errors.push('Please enter a valid amount')
     } else if (parseFloat(formData.amount) > (user?.balance || 0)) {
       errors.push('Insufficient funds')
-    } else if (parseFloat(formData.amount) > 10000) {
-      errors.push('Amount exceeds daily limit of $10,000')
+    } else if (parseFloat(formData.amount) > 20000) {
+      errors.push('Amount exceeds daily limit of $20,000')
     }
     
     if (errors.length > 0) {
@@ -712,7 +712,7 @@ const TransferMoney = () => {
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-sm text-gray-600">
-                    <span className="font-semibold">Daily transfer limit:</span> $10,000 per recipient
+                    <span className="font-semibold">Daily transfer limit:</span> $20,000 per recipient
                   </p>
                 </div>
                 
