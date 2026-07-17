@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Linear Gradients for Premium Look -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F2027" />
+      <stop offset="50%" stop-color="#203A43" />
+      <stop offset="100%" stop-color="#2C5364" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE181" />
+      <stop offset="50%" stop-color="#EAA81B" />
+      <stop offset="100%" stop-color="#B87D04" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Circle with Premium dark gradient -->
+  <circle cx="256" cy="256" r="240" fill="url(#bgGrad)" stroke="url(#goldGrad)" stroke-width="8" />
+
+  <!-- Subtle overlay sheen for glassmorphism / depth -->
+  <path d="M 256,16 A 240,240 0 0,1 496,256 A 240,240 0 0,0 256,16 Z" fill="url(#glowGrad)" />
+
+  <!-- Bank / Security Shield Logo and Stylized S / $ -->
+  <!-- Centered Shield -->
+  <path d="M 256,110 L 376,160 V 280 C 376,360 256,410 256,410 C 256,410 136,360 136,280 V 160 Z" 
+        fill="none" stroke="url(#goldGrad)" stroke-width="16" stroke-linejoin="round" stroke-linecap="round" />
+  
+  <!-- Stylized Elegant S / $ symbol inside the shield -->
+  <path d="M 256,150 V 350 M 290,195 C 290,195 240,170 220,200 C 200,230 290,240 280,285 C 270,330 220,310 220,310" 
+        fill="none" stroke="url(#goldGrad)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)" />
+</svg>
