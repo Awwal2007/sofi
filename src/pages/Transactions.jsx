@@ -696,7 +696,7 @@ const Transactions = () => {
                 </table>
               </div>
 
-              {filteredTransactions.length === 0 && recentTransactions.length === 0 && transactions.length > 0 && (
+              {filteredTransactions.length === 0 && recentTransactions.length === 0 && (
                 <div className="text-center py-16">
                   <div className="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
                     <FiInfo className="w-10 h-10 text-gray-400" />
@@ -706,7 +706,7 @@ const Transactions = () => {
                 </div>
               )}
 
-              {filteredTransactions.length === 0 && (recentTransactions.length > 0 || transactions.length === 0) && (
+              {filteredTransactions.length === 0 && recentTransactions.length > 0 && (
                 <div className="text-center py-16">
                   <div className="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
                     <FiSearch className="w-10 h-10 text-gray-400" />
@@ -746,7 +746,7 @@ const Transactions = () => {
           ) : (
             /* Card View */
             <>
-              {filteredTransactions.length === 0 && recentTransactions.length === 0 && transactions.length > 0 && (
+              {filteredTransactions.length === 0 && recentTransactions.length === 0 && (
                 <div className="text-center py-16 bg-white rounded-3xl shadow-sm mb-6">
                   <div className="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
                     <FiInfo className="w-10 h-10 text-gray-400" />
@@ -756,7 +756,7 @@ const Transactions = () => {
                 </div>
               )}
 
-              {filteredTransactions.length === 0 && (recentTransactions.length > 0 || transactions.length === 0) && (
+              {filteredTransactions.length === 0 && recentTransactions.length > 0 && (
                 <div className="text-center py-16 bg-white rounded-3xl shadow-sm mb-6">
                   <div className="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
                     <FiSearch className="w-10 h-10 text-gray-400" />
